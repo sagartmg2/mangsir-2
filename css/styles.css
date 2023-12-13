@@ -1,0 +1,29 @@
+
+header ul {
+    padding-left: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 16px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header .active{
+    color:red;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid;
+    padding: 8px;
+}

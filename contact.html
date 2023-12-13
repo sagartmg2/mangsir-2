@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- external css -->
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- internal css  -->
+    <style>
+        .active-user{
+            background-color: green;
+            color: white;
+        }
+
+        td.active{  /* and selector */
+            background-color: green;
+            color: white;
+        } 
+
+        td.inactive{  /* and selector */
+            background-color:rgba(0,255,0,0.1);
+            background-color:#F54747;
+            color: white;
+        } 
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">home </a> </li>
+                <li ><a href="#" class="">about </a> </li>
+                <li ><a href="#" class="active">contact </a> </li>
+                <li class="ml-4"><a href="./index.html">all courses </a> </li>
+                <li class="ml-4"><a href="./index.html">con]tacts</a> </li>
+                <li class="ml-4"><a href="./index.html">blogs</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>abc</td>
+                <td class="active">active</td>
+            </tr>
+            <tr>
+                <td>xyz</td>
+                <td class="active">active</td>
+            </tr>
+            <tr>
+                <td>ijk</td>
+                <td class="inactive">inactive</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

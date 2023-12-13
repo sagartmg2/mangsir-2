@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        /* 
+            selctor {
+                css-property : property-value
+            }
+        */
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+         header li {
+            display: inline;
+        }
+
+        #main{
+            background-color: yellow;
+            text-decoration: underline;
+        }
+
+        /*
+
+        we donot use id too much in css , we prefer class insted
+
+        #logo{
+            text-transform: uppercase;
+        }
+        #ram ,#ram-two{
+            text-transform: uppercase;
+        } 
+        */
+
+        .uppercase{
+            text-transform: uppercase;
+        }
+
+        .text-red{
+            color: red;
+        }
+        .box{
+            border: 1px solid ;
+            padding: 16px;
+           
+        }
+
+        .card{
+            padding: 16px;
+            border: 1px solid;
+        }
+        .one{
+            margin-bottom: 20px;
+        }
+        .two{
+            margin-top:30px
+        }
+
+        
+      
+        .parent{
+            color: bisque;
+            
+        }
+        .parent{
+            color: aqua;
+            /* text-decoration: underline; */
+            text-transform: capitalize;
+        }
+
+        .children{
+            color:red;
+            /* text-decoration: dashed; */
+            text-transform: lowercase;
+        }
+
+       
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">home </a> </li>
+                <!-- <li ><a href="#" style="color:red">about </a> </li> -->
+                <li ><a href="#" class="active">about </a> </li>
+                <li class="ml-4"><a href="./index.html">all courses </a> </li>
+                <li class="ml-4"><a href="./index.html">con]tacts</a> </li>
+                <li class="ml-4"><a href="./index.html">blogs</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1 class="uppercase ">About <span class="text-red">us</span>.</h1>
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos, enim soluta inventore beatae
+        voluptates corrupti labore obcaecati tenetur assumenda asperiores aliquid odio qui, eligendi itaque impedit eum
+        facilis possiorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos, enim soluta inventore beatae
+        voluptates corrupti labore obcaecati tenetur assumenda asperiores aliquid odio qui, eligendi itaque impedit eum
+        facilis possimus!</p>
+
+    <span>Welcome</span>
+    <span>to</span>
+    <span id="logo" class="uppercase text-red">Mindrisers</span>
+
+    <h2>Element types</h2>
+    <ul>
+        <li>block</li>
+        <li>inline</li>
+        <li>inline-block</li>
+    </ul>
+    <h2>Our Team</h2>
+    <ul>
+        <li id="ram" class="uppercase text-red">Mr Ram-1</li>
+        <li id="ram-two" class="uppercase">Mr Ram</li>
+        <li id="ram-three" class="uppercase">Mr Ram</li>
+        <li>Mr hari</li>
+        <li>Mr hari</li>
+        <li>Mr hari</li>
+        <li>Mr hari</li>
+    </ul>
+
+    <h2>Semantic Tags</h2>
+    <ul>
+        <li>main</li>
+        <li>header</li>
+        <li>article</li>
+        <li>section</li>
+        <li>footer</li>
+    </ul>
+
+    <h2>Selectors</h2>
+    <ul>
+        <li>element</li>
+        <li>id</li>
+        <li>css <span id="main" class="uppercase">class </span></li>
+        <li>
+            combination of selctor
+            <ul>
+                <li>descendent selector</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>box model</h2>
+    <ul>
+        <li>border</li>
+        <li>
+            <h3 style="margin-bottom: 0;" >Margin  (vertical margin collapses)</h3>
+            <p class="box" style=" border-color: red; margin-top:0px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur omnis animi vel ex! Non totam eum debitis consequatur, dolorem dicta minima amet harum quasi reprehenderit! Doloremque laboriosam quidem libero quae.</p>
+
+            <div class="card one">
+                    card-one
+            </div>
+            <div class="card two">
+                    card-two
+            </div>
+
+        </li>
+
+        <li>
+            <h3>padding</h3>
+           <p class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione quidem reprehenderit maxime tempora dolor reiciendis doloremque sint, incidunt, fuga beatae illum hic cupiditate, recusandae mollitia temporibus nobis consectetur officiis!</p>
+        </li>
+
+    </ul>
+
+    <h2>css types</h2>
+    <ul>
+        <li>inline</li>
+        <li>internal</li>
+        <li>external</li>
+    </ul>
+
+    <h2>Measurement Units</h2>
+    <ul>
+        <li>px</li>
+        <li>%</li>
+        <li>rem</li>
+        <li>em</li>
+        <li>vh</li>
+        <li>vw</li>
+    </ul>
+
+    <div class="parent box">
+        <p>parent ext Lorem ipsum dolor sit amet.</p>
+        <div class="children">
+            child text  repellendus eaque cum minima quod.
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <a href="">facebook</a>
+        <a href="">youtube</a>
+    </footer>
+</body>
+
+</html>

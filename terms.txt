@@ -1,0 +1,8 @@
+ tags/ elements
+    eg: html , body, p ,img
+    NOTE: almost every tags should have a closing tag
+
+attribute
+    - they further describe our elements
+    eg: lang in html tag
+    <html lang="en">
