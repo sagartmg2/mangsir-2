@@ -13,3 +13,10 @@
     git add git.txt  // to add a single file
 3. git commit -m "html-css"
 4. git push 
+
+
+
+optional
+    git restore . 
+    git clean -f -d
+    git pull

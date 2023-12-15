@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent { /* flex box */
+            border: 1px solid;
+            height: 150px;
+            display: flex;
+            justify-content: flex-end;
+            /* flex-start,center,flex-end,justify-between */
+            align-items: center;
+            /* flex-start, center,flex-end */
+        }
+        .child{ /* flex items */
+            border: 1px solid;
+            padding: 1rem;
+            height: 20px;
+        }
+        
+    </style>
 </head>
+
 <body>
-    <h1>flex</h1>
-    
+
+    <div class="parent">
+        <!-- 
+            emmet shortcut 
+            .child*3>{child-$}
+         -->
+        <div class="child one">child-1</div>
+        <div class="child two">child-2</div>
+        <div class="child three">child-3</div>
+    </div>
+
 </body>
+
 </html>
