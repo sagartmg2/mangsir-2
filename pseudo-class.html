@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child {
+            border:1px solid;
+            padding:1rem;
+            width: 200px;
+        }
+        
+        /* descendent selector , and selector */
+        /* header.parent div.fifth{
+            background-color: red;
+        } */
+      
+        header div:first-child{
+            background-color: red;
+        }
+        header div:last-child{
+            background-color: red;
+        }
+
+        p.child:nth-child(2){
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="parent">
+        <!-- .child*5>{child-$} -->
+        <div class="child">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child">child-3</div>
+        <div class="child">child-4</div>
+        <div class="child fifth">child-<span class="child">5</span></div>
+    </header>
+
+    <div class=" parent ">
+        <p class="child">para-1</p>
+        <p class="child">para-2</p>
+        <p class="child">para-3</p>
+        <p class="child">para-4</p>
+        <div class="child fifth">para-5</div>
+    </div>
+
+    <h1>reserach</h1>
+    <ul>
+        <li>hover</li>
+        <li>focus</li>
+        <li>active</li>
+        <li>before</li> // pseudo element
+        <li>after</li> // pseudo element
+    </ul>
+
+</body>
+
+</html>
