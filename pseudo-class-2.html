@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header ul{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            gap: 1rem;
+        }
+        .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .child:nth-child(2n){
+            background-color: red;
+        }
+
+        .child:hover{
+            color: red;
+        }
+        
+        form label span{
+            color: red;
+        }
+
+        /* pseudo elemnt */
+       
+        .required-field::after{
+            content: "*";
+            color: red;
+        }
+
+        .child:nth-child(6)::after{
+            content: "";
+            display: block;
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </header>
+    <div class="parent">
+      <div class="child">child-1</div>
+      <div class="child">child-2</div>
+      <div class="child">child-3</div>
+      <div class="child fourth">child-4</div>
+      <div class="child">child-5</div>
+      <div class="child">child-6</div>
+    </div>
+
+
+
+    <hr>
+    <form>
+        <label class="required-field" for="">name</label>
+        <input type="text">
+        <br>
+        <label for="phone">phone</label>
+        <input type="text" id="phone">
+        <br>
+        <label class="required-field" for="">password</label>
+        <input type="password">
+        <br>
+        <label class="required-field" for="">confirm password</label>
+        <input type="password">
+        <br>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
