@@ -6,44 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding-left: .75rem;
+            padding-right: .75rem;
+        }
+
         .static {
             position: static;
         }
 
         .relative {
-            /* position: relative; */
+            position: relative;
+            left: 50px;
+            top: 10px
         }
 
         .absolute {
-            /* position: absolute; */
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0px;
+            right: 0;
         }
 
         .fixed {
+            background-color: aqua;
             /* position: fixed; */
+            right: 0;
+            top: 100px;
         }
 
         .sticky {
-            /* position: sticky; */
+            position: sticky;
+            top: 10px
         }
-        .box{
+
+        .box {
             height: 100px;
             width: 100px;
             border: 1px solid;
         }
-        ul{
+
+        ul {
             list-style: none;
+        }
+
+        .descritpion {
+            width: 30%;
+        }
+
+        .card {
+            width: 80%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: .5rem;
+            border-radius: 16px;
+            height: 200px;
+        }
+        .border-box{
+            margin-top: 13rem;
+            margin-bottom: 13rem;
+            width: 375px;
+            padding: 1rem;
+        }
+        .circles{
+            display: flex;
+            /* margin-top: 4rem;
+            margin-left: -2rem; */
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: aqua;
+        }
+        .circle-sm{
+            height: 25px;
+            width: 25px;
         }
     </style>
 </head>
 
 <body>
-    <ul>
+    <ul class="container">
         <li class="box static ">static</li>
         <li class="box relative ">relative</li>
         <li class="box absolute ">absolute</li>
         <li class="box fixed ">fixed</li>
         <li class="box sticky ">sticky</li>
     </ul>
+
+    <div class="card box">
+        <p>request a callback </p>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle circle-sm"></div>
+        </div>
+    </div>
+
+    <div class="descritpion container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam quas iure eum, culpa officiis perferendis
+            reprehenderit. Earum excepturi labore deserunt fuga, quidem sapiente reiciendis dolores modi similique.
+            Unde, qui?]</p>
+    </div>
+
+    <div class="box border-box">
+        border-box
+    </div>
+
+
 </body>
 
 </html>
