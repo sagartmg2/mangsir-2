@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* serfif fonts */
+            font-family:'Times New Roman', Times, serif;
+            /* sans serif */
+            font-family:"Rubik";
+        }
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* end-reset css */
+
+        header {
+            background-color: antiquewhite;
+            position: sticky;
+            top: 0;
+            border: 1px solid;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        header ul {
+
+            display: flex;
+            gap: 1rem;
+        }
+
+        .container {
+            padding-left: .75rem;
+            padding-right: .75rem;
+            margin-bottom: 2rem;
+        }
+
+        main {
+            width: 10%;
+        }
+
+        .h-screen {
+            height: 100vh;
+            border: 1px solid;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        .card {
+            width: 50%;
+            position: relative;
+            box-shadow: 16px 13px 16px -8px red;
+        }
+
+        .circle {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border-radius: 50%;
+            bottom: 0;
+        }
+
+        .circle.small {
+            left: 2rem;
+            height: 25px;
+            width: 25px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="box card">
+            card
+            <div class="circle small"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="container h-screen">
+        <div class="box sticky">
+        </div>
+    </div>
+
+
+
+
+    <main class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit illo enim nam cupiditate
+            architecto facere iure. Hic magni doloribus esse velit ex quae, recusandae ab ducimus inventore
+            explicabo. Neque.</p>
+    </main>
+
+
+</body>
+
+</html>
