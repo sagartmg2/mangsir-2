@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            border: 1px solid;
+            padding: 1rem;
+            width: 25%;
+            /* we first made design for noraml deskotp -- desktop first apporoach */
+        }
+
+        /* 1024px - 1279px  small laptops */
+        @media(max-width:1279px) {
+            .project {
+                width: 33.33%;
+            }
+        }
+
+        /* 768px - 1023px  tablet */
+        @media(max-width:1023px) {
+            .project {
+                width: 50%
+            }
+        }
+
+        @media(max-width:767px) {  /* 0 - 767px mobile */
+            
+            h1 {
+                text-align: center;
+            }
+
+            .project h2 {
+                text-align: center;
+            }
+
+            .project {
+                width: 100%
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>projects</h1>
+    <div class="projects">
+        <div class="project">
+            <h2>Git</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>css</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>REact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>Node.js</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>express.js</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>next</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>taiwlind</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

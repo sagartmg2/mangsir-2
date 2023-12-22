@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .project {
+            border: 1px solid;
+            padding: 1rem;
+        }
+
+        .project h2 {
+            text-align: center;
+        }
+
+        @media(min-width:768px){
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project{
+                width: 50%;
+            }
+        }
+        @media(min-width:1024px){
+            .project{
+                width: 33.33%;
+            }
+        }
+
+        @media(min-width:1280px){
+            .project{
+                width: 25%
+            }
+        }
+        @media(min-width:1536px){
+            html{
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>projects</h1>
+    <div class="projects">
+        <div class="project">
+            <h2>Git</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>css</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>REact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>Node.js</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>express.js</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>next</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+        <div class="project">
+            <h2>taiwlind</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus neque,
+                architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt quibusdam
+                mollitia tempora?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
