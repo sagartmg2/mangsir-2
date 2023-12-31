@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .projects{
+            margin-right: -1rem;
+        }
+        .project-wrapper{
+            padding-bottom: 1rem;
+            /* border: 1px solid red; */
+            padding-right: 1rem;
+        }
+        .project {
+            border: 1px solid;
+            padding: 1rem;
+        }
+
+        @media ( min-width:758px){
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project-wrapper{
+                width: 50%;
+            }
+        }
+        @media ( min-width:1024px){
+          
+            .project-wrapper{
+                width: 33%;
+            }
+        }
+      
+    </style>
+
+</head>
+
+<body>
+    <h1>projects</h1>
+    <div class="projects">
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="project">
+                <h2>Git</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sunt harum cum error, culpa minus
+                    neque,
+                    architecto cumque possimus sapiente ipsam beatae laudantium similique veritatis eos nesciunt
+                    quibusdam
+                    mollitia tempora?</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
