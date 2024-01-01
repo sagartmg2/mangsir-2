@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.parent {
+        height: 300px;
+        width: 300px;
+      }
+      .two{
+        /* transition-property: transform background-color;
+        transition-duration:.5s; */
+        transition:  all .5s;
+      }
+      
+      .parent:hover .two {
+        background-color: aquamarine !important;
+        transform: rotate(45deg);
+        transform: scale(2);
+        transform: translateY(-100px);
+        transform: translateX(100px);
+        transform: translate(10px, -10px);
+      }
+       
+      @keyframes bounce{
+        from{
+            transform: translateY(10px);
+        }
+        to{
+            transform: translateY(-10px);
+        }
+      }
+
+      #block{
+        animation: bounce;
+        animation-iteration-count: infinite;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+
+        border: 1px solid;
+      }
+      #block {
+        background-color: red;
+      }
+      .child {
+        background-color: black;
+      }
+      /* 0 0 1 */
+      section {
+        background-color: antiquewhite;
+      }
+      /*  1 0 2 */
+      div section#block {
+        background-color: yellow;
+      }
+      /* 0 0 1 */
+      section {
+        background-color: aqua;
+      }
+      /* 0 1 1 */
+      section.two {
+        background-color: aqua;
+      }
+      /* 0 1 2 */
+      div section.two {
+        background-color: red;
+      }
+      /* 010 */
+      .two {
+        background-color: blue;
+      }
+      /* 010 */
+      .center {
+        text-align: center;
+      }
+      /* 003 */
+      html body h1 {
+        text-align: left;
+      }
+      /* 0 0 2 */
+      body h1 {
+        text-align: right;
+      }
+
+      /*  0 0 1 */
+      h1 {
+        text-align: center;
+      }
+      /* 1 2 3 */
+      html body section#red.two.box {
+        background-color: red;
+      }
+
+      div section {
+        background-color: red !important;
+      }
+      section {
+        background-color: black !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="center">Specificity score</h1>
+    <h2>tags < class < id</h2>
+
+    <div class="parent box">
+      <section class="child box" id="block"></section>
+      <section
+        class="two box"
+        id="red"
+        style="background-color: aliceblue"
+      ></section>
+    </div>
+  </body>
+</html>
