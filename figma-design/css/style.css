@@ -1,0 +1,70 @@
+/* 
+    2xl:1536px
+    xl:1280px   56px
+    lg:1024    47px
+    md:768    39px
+    sm:576 / 640  32 px  // mobile landspace 
+    27:px  // below 576px or 640px  = mobile
+
+
+*/
+
+nav {
+  padding-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo {
+  fill: #f53838;
+}
+
+.hamburger {
+  height: 32px;
+  width: 32px;
+}
+
+.drawer {
+  position: fixed;
+  background-color: orange;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(0%);
+  transform: translateX(50%);
+  transform: translateX(100%);
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding-top: 39px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding-top: 47px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .drawer {
+    display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  nav {
+    padding-top: 56px;
+  }
+}
