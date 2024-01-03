@@ -1,9 +1,40 @@
-*{
-    /* background-color: rgba(255,0,0,0.05); */
+* {
+  /* background-color: rgba(255,0,0,0.05); */
 }
 
+:root{
+  --primary-color:#f54747;
+}
 .hidden {
   display: none;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 18px 77px 18px 77px;/* top ight bottom left */
+  padding: 13px 45px;
+  color: white;
+  transition: all .5s;
+  
+}
+.btn:hover{
+  box-shadow: 7px 4px 9px -2px var(--primary-color)
+}
+.btn.transparent{
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+.btn.outline{
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.btn.outline:hover{
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .container {

@@ -27,9 +27,19 @@
           </svg>
           <span>LaslesVPN</span>
         </div>
-        <img src="./assets/images/menubar.svg" class="hamburger" alt="" />
-
-        <div class="drawer">
+        <!-- onclick='document.getElementsByClassName("drawer")[0].classList.add("open")' -->
+        <img
+          onclick='document.getElementById("drawer").classList.add("open")'
+          src="./assets/images/menubar.svg"
+          class="hamburger"
+          alt=""
+        />
+        <div class="drawer" id="drawer">
+          <span
+            onclick='document.getElementById("drawer").classList.remove("open")'
+            class="close"
+            >X</span
+          >
           <ul class="">
             <li><a href="#">about</a></li>
             <li><a href="#">about</a></li>
@@ -37,8 +47,8 @@
             <li><a href="#">about</a></li>
           </ul>
           <div class="">
-            <button>sign in</button>
-            <button>sign up</button>
+            <button class="btn transparent">sign in</button>
+            <button class="btn outline">sign up</button>
           </div>
         </div>
       </nav>

@@ -13,12 +13,9 @@ nav {
   padding-top: 27px;
   display: flex;
   justify-content: space-between;
+  text-transform: capitalize;
 }
 
-nav ul {
-  display: flex;
-  gap: 1rem;
-}
 
 .logo-wrapper {
   display: flex;
@@ -33,25 +30,45 @@ nav ul {
 .hamburger {
   height: 32px;
   width: 32px;
+  cursor: pointer;
 }
 
 .drawer {
-  position: fixed;
   background-color: orange;
+  position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
-  transform: translateX(0%);
-  transform: translateX(50%);
+  padding: 2rem;
+  width: 50vw;
   transform: translateX(100%);
+  transition: all .5s;
+}
+.drawer.open{
+  transform: translateX(0%);
+}
+.close{
+  cursor: pointer;
+  font-size: 2rem;
 }
 
+.drawer a:hover{
+  color:#f53838
+  
+}
+
+nav button{
+  text-transform: capitalize;
+}
+
+/* tablet */
 @media (min-width: 768px) {
   nav {
     padding-top: 39px;
   }
 }
 
+/* small laptop */
 @media (min-width: 1024px) {
   nav {
     padding-top: 47px;
@@ -60,10 +77,38 @@ nav ul {
     display: none;
   }
   .drawer {
+    flex-grow: 1;
+    position: static;
+    transform: none;
+    background-color: transparent;
     display: flex;
+    padding: 0;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close{
+    display: none;
+  }
+  .drawer ul{
+    flex-grow: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
+/* deskotop */
 @media (min-width: 1280px) {
+  nav {
+    padding-top: 56px;
+  }
+}
+
+/* larger desktop .. monitor */
+@media (min-width: 1536px) {
   nav {
     padding-top: 56px;
   }
