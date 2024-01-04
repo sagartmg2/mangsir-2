@@ -24,7 +24,7 @@ nav {
 }
 
 .logo {
-  fill: #f53838;
+  fill: var(--primary-color)
 }
 
 .hamburger {
@@ -53,7 +53,7 @@ nav {
 }
 
 .drawer a:hover{
-  color:#f53838
+  color:var(--primary-color)
   
 }
 
