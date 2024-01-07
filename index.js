@@ -1,53 +1,103 @@
-// alert("js connected")
+let color; //  declaration
+color = "red"; // initialzation
+color = "white"; // initialzation
 
-/* alt + shift + a  multi-line-comment */
-/* variable 
-    - a keyword where we can store some value 
-    - re-usable
-    - create once, can be reused again and again
+let hexCode = "#FFEEE";
+// let hexCode = "#FFEEE"; // wrong
+hexCode = "#FDEEE";
+let rgbCode = "rgba(25,23,5)";
 
-*/
-greeting = "Namaste"
+const VALID_ROLE = "admin";
 
-console.log(greeting)
-console.log("Namaste","Bhupesh")
-console.log(greeting,"Bibek")
-console.log(greeting,"Ram")
-console.log(greeting,"Hari")
+/* data types
+    - string
+    - number 
+    - boolean 
+    - null
+    - undefined
 
-/* 
-    naming conventions
-    snake_case // in python
-    camelCase // in js
-    kebab-case  // only in css 
+    /collections
+    - array
 */
 
-first_name = 'bhupesh'
-firstName = "bhupesh"
-lastName = "Shakya"
-console.log(first_name)
-console.log(firstName,lastName)
-age = 20
-console.log(age) // auto-semicolon
-var kycVerificed = true
-console.log("kyc verififed",kycVerificed)
+let price; // undefined
+// price = 100
+console.log("price", price);
 
-courseTitle = "Mern"
-courseDuration = "3 months"
-courseTime = "3 - 4"
-
-console.log("our course is",courseTitle ,"and its duration is ",courseDuration);
-
-/* 
-DataTypes
-    text  - String
-    number  - integer(whole number )  /float/double
-    true/false  - Boolean 
+let products = null;
+/* code to fetch from api
+    products = ["watch","two"]
 */
 
-const one = 1
+let a = "ram";
+let b = "hari"; // wrong / donot use random varaible names
 
-let luckyNumber = one
-console.
-log("my lucky number is",luckyNumber);
+let friend1 = "abc";
+friend1 = "ram"; // re-initaize
+let friend2 = "ijk";
+let friend3 = "xyz";
+
+console.log("friend1", friend1);
+
+/* Donot Repeat Yourself */
+/* Array
+    - collection of multiple values
+    - collection of similear data-types
+    - always starts with index 0 
+    syntax
+        let <variableName> = [<element1>,<element2>]
+        eg:
+        let friends = ["abc","ijk","xyz"]
+        let friends = [0th, 1st, 2nd index] // in term of index
+
+
+*/
+let friends = ["abc", "ijk", "xyz"];
+let evenNumbers = [2, 4, "six", 8, "ten"]; //wrong /// should have similar data-types
+/* code */
+
+console.log(friends);
+console.log("evenNumber", evenNumbers);
+
+/* accessing the value of arrays element */
+let secondIndexValue = evenNumbers[2];
+console.log("in 2nd index", secondIndexValue);
+
+console.log("before - in 2nd index", evenNumbers[2]);
+/* update/mutate array value/elements */
+evenNumbers[2] = 6;
+evenNumbers[4] = 10;
+console.log("after - in 2nd index", evenNumbers[2]);
+console.log("even number", evenNumbers);
+
+let apiData = [];
+/* code to call api */
+// apiData = [data1,data2]
+
+let fruits = ["apple", null, "orange"]; // TODO: output: ["apple", "kiwi", "orange"]
+console.log("before - fruits", fruits);
+fruits[1] = "kiwi";
+console.log("before 3rd index", fruits[3]); //undefined
+fruits[3] = "banana";
+console.log("after  3rd index", fruits[3]); // banana
+console.log("after - fruits", fruits);
+
+
+let course1 = "mern";
+let course1StartTime = 3;
+let course1EndTime = 4;
+let course1DurationInMonths = 3;
+let course1Status = true;
+
+let course2 = "qa";
+let course2StartTime = 4;
+let course2EndTime = 5
+let course2DurationinMonths = 2;
+let course2Status = false;
+
+let courses 
+/* code here.. */ 
+
+
+console.log(courses); // information of multiple courses
 
