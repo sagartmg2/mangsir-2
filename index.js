@@ -1,87 +1,30 @@
-let color; //  declaration
-color = "red"; // initialzation
-color = "white"; // initialzation
+let count = 100;
+count = 20000;
 
-let hexCode = "#FFEEE";
-// let hexCode = "#FFEEE"; // wrong
-hexCode = "#FDEEE";
-let rgbCode = "rgba(25,23,5)";
-
-const VALID_ROLE = "admin";
-
-/* data types
-    - string
-    - number 
-    - boolean 
-    - null
-    - undefined
-
-    /collections
-    - array
+/* array
+    - elements
+    - indexes  // always starts with 0 
 */
+// let images = ["https://ur1", "https://ur2"];
+// console.log(images);
+// console.log("before", images[0]);
+// images[0] = "https://domain/image.png";
+// images[1] = "https://domain/images-second.png";
+// console.log("after", images[0]);
+// console.log(images[1]);
+// console.log(images);
 
-let price; // undefined
-// price = 100
-console.log("price", price);
+// let course = ['mern', 'qa']
+// let courseStartTime = [3, 4]
+// let courseEndTime = [4, 5]
+// let courseDurationMonth = [3, 2]
+// let courseStatus = [true, false]
 
-let products = null;
-/* code to fetch from api
-    products = ["watch","two"]
-*/
+// let courseInfo= ['courses are:',course,'courses starting time are:' ,courseStartTime,'course end time are:' ,courseEndTime,'course duration are:',courseDurationMonth, 'course status are:',courseStatus]
+// console.log(courseInfo)
 
-let a = "ram";
-let b = "hari"; // wrong / donot use random varaible names
-
-let friend1 = "abc";
-friend1 = "ram"; // re-initaize
-let friend2 = "ijk";
-let friend3 = "xyz";
-
-console.log("friend1", friend1);
-
-/* Donot Repeat Yourself */
-/* Array
-    - collection of multiple values
-    - collection of similear data-types
-    - always starts with index 0 
-    syntax
-        let <variableName> = [<element1>,<element2>]
-        eg:
-        let friends = ["abc","ijk","xyz"]
-        let friends = [0th, 1st, 2nd index] // in term of index
-
-
-*/
-let friends = ["abc", "ijk", "xyz"];
-let evenNumbers = [2, 4, "six", 8, "ten"]; //wrong /// should have similar data-types
-/* code */
-
-console.log(friends);
-console.log("evenNumber", evenNumbers);
-
-/* accessing the value of arrays element */
-let secondIndexValue = evenNumbers[2];
-console.log("in 2nd index", secondIndexValue);
-
-console.log("before - in 2nd index", evenNumbers[2]);
-/* update/mutate array value/elements */
-evenNumbers[2] = 6;
-evenNumbers[4] = 10;
-console.log("after - in 2nd index", evenNumbers[2]);
-console.log("even number", evenNumbers);
-
-let apiData = [];
-/* code to call api */
-// apiData = [data1,data2]
-
-let fruits = ["apple", null, "orange"]; // TODO: output: ["apple", "kiwi", "orange"]
-console.log("before - fruits", fruits);
-fruits[1] = "kiwi";
-console.log("before 3rd index", fruits[3]); //undefined
-fruits[3] = "banana";
-console.log("after  3rd index", fruits[3]); // banana
-console.log("after - fruits", fruits);
-
+// let Coursess = [["mern","starttime","3","endtime","4","3months",true],["js","3-5","4months",false],["python","4-5","6months",true]]
+// console.log(Coursess);
 
 let course1 = "mern";
 let course1StartTime = 3;
@@ -91,13 +34,90 @@ let course1Status = true;
 
 let course2 = "qa";
 let course2StartTime = 4;
-let course2EndTime = 5
+let course2EndTime = 5;
 let course2DurationinMonths = 2;
 let course2Status = false;
 
-let courses 
-/* code here.. */ 
+/* object 
+    let <objectName> = {
+        <key>:<value>,
+        <key>:<value>,
+        <attribute>:<value>,
+        <property>:<value>,
+    }
 
+    - singular variable name
+    - keys are usually smallCase
+    - must have comma after values
 
-console.log(courses); // information of multiple courses
+*/
 
+let courses = ["qa", "pytho", "mern"];
+
+let projector1 = {
+  color: "white",
+  price: 50000,
+  brand: "viewsonic",
+};
+
+let projector2 = {
+  color: "black",
+  price: 50000,
+  brand: "samsung",
+};
+
+let course_1 = {
+  title: "mern",
+  startTime: 3,
+  endTime: 4,
+  duration: "1 hour",
+  status: true,
+};
+course_1.title = "mern-stack";
+/* code here.. */
+
+let course_2 = {
+  startTime: 3,
+  endTime: 4,
+  duration: "1 hour",
+  status: true,
+  title: "quality asssurance",
+};
+
+courses = [course_1, course_2];
+console.log(course_2);
+
+let room1 = {
+  name: "living",
+  color: "green",
+  size: "200sq feet",
+};
+
+let room2 = {
+  name: "ktch", // change this to dining
+  color: "blue",
+  size: "200 sq feet",
+};
+
+console.log("before - room2 name", room2.name);
+room2.name = "dining";
+console.log("after - room2 name", room2.name);
+
+// let rooms = [room1,room2];
+
+let rooms = ["living", "kitchen", "bedroom"];
+
+rooms = [
+  {
+    room: "living",
+    color: "lime",
+    dimensionInSqFoot: 10,
+  },
+  {
+    room: "ktch", // change this to dining
+    color: "white",
+    dimensionInSqFoot: 20,
+  },
+];
+/* code here.. */
+console.log(rooms);
