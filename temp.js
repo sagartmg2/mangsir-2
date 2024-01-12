@@ -1,14 +1,26 @@
-let oddNumbers = [1, 3, 5, 7]; // right way
-let evenNumbers = [2, 4, "six", "eignt"]; // wrong way
-evenNumbers[2] = 6;
-evenNumbers[3] = 8;
-console.log("oddNumbers",oddNumbers);
-console.log("evenNumbers",evenNumbers); // [2,4,6,8]
+let todosApiData = {
+  data: {
+    todo: [
+      { title: "html", status: "completed " },
+      { title: "css", status: "completed " },
+      { title: "js", status: "completed " },
+      { title: "react", status: "pending " },
+      { title: "node.js", status: "pending " },
+    ],
+  },
+};
+function info(course, status) {
+  console.log(`${course} is ${status}`);
+}
 
-// let friends = ["dinesh", "aashish", "gaurab"];
-// friends[2] = ["sunil"];
-// console.log("name of friends", friends);
+function data(index) {
+  info(todosApiData.data.todo[index].title, todosApiData.data.todo[index].status);
+}
 
-// let fruits = ["apple", "mango", "orange", "banana"];
-// fruits[5] = [null];
-// console.log("name of fruits", fruits);
+data(0);
+data(1);
+data(2);
+// data([1], [1]);
+// data([2],[2])
+// data([3],[3])
+// data([4],[4])

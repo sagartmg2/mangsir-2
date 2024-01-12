@@ -2,6 +2,7 @@ let todos = [
   { createdAt: "2080-09-09", name: "html", status: "completed" },
   { createdAt: "2080-09-08", name: "css", status: "completed" },
   { createdAt: "2080-09-07", name: "js", status: "completed" }, // TODO: change this status to pending
+  { createdAt: "2080-09-07", name: "react", status: "pending" },
 ];
 
 todos[2].status = "pending";
@@ -10,86 +11,88 @@ todos[2].status = "pending";
 /* css is completed */
 /* js is pending */
 
-console.log(todos[0].name + " is " + todos[0].status);
-console.log(todos[1].name + " is " + todos[1].status);
-console.log(todos[2].name, " is ", todos[2].status);
+// console.log(`${todos[0].name} is ${todos[0].status}`);
 
-let todo1 = todos[0];
-console.log(
-  `${todos[0].name} created at ${todos[0].createdAt} is ${todos[0].status}`
-);
-console.log(`${todo1.name} created at ${todo1.createdAt} is ${todo1.status}`);
-
-/* string literal  or template litreal 
-    back tick ``   above tab 
+/* 
+    console.log(todos[0].name + " is " + todos[0].status);
+    console.log(todos[1].name + " is " + todos[1].status);
+    console.log(todos[2].name, " is ", todos[2].status);
+    console.log(todos[3].name, " is ", todos[3].status);
 */
 
-let firstName = "hari";
-let lastName = "bdr";
-// let fullName = firstName + " " + lastName;
-let fullName = `${firstName} ${lastName}`;
+function printStatus(index) {
+  let name = todos[index].name;
+  let status = todos[index].status;
+  console.log(`${name} is ${status} for index:${index}`);
+}
 
-console.log(fullName);
+// printStatus(0) // 0 is arguement
+// printStatus(1) // 1 is arguement
+// printStatus(2)
+// printStatus(3)
 
-/* function */
-
-/*
-    1, 2
-    2, 2
-    3, 10
-    5, 4
+/* 
+    function 
+        - reusable
  */
 
-let num1 = 1;
-let num2 = 2;
-let sum = num1 + num2;
-console.log(`${num1} + ${num2} = ${sum}`);
-console.log(`the sum of ${num1} and  ${num2} is ${sum}`);
+function printTodoStatus(todo) {
+  // todo here is called an parameter
+  // for first function call todo = { createdAt: "2080-09-09", name: "html", status: "completed" }
+  // for first function call todo = { createdAt: "2080-09-08", name: "css", status: "completed"
+  console.log(`${todo.name} created at ${todo.createdAt} is ${todo.status}`);
+}
 
-let num3 = 2;
-let num4 = 2;
-let sum2 = num3 + num4;
-console.log(`${num3} + ${num4} = ${sum2}`);
-console.log(`the sum of ${num3} and  ${num4} is ${sum2}`);
+printTodoStatus(todos[0]); // printTodoStatus ( {name:html,....} )
+printTodoStatus(todos[1]); // printTodoStatus ( {name:css,....} )
+printTodoStatus(todos[2]);
+printTodoStatus(todos[3]);
 
-/* group - function */
+// rating(5) // ⭐⭐⭐⭐⭐
+// rating(4.5) // ⭐⭐⭐⭐
 
-// let input1 = 100 ; let input2 = 200
+// formatDate("2024-01-23-")
 
-/* to write functional comment
-    /** ...  
+/* 
+    function typeof(value){
+
+        return
+    }
 */
 
-/**
- * this function calcuates sum of two number
- * @param number input1
- * @param number input2
- */
+console.log(typeof "hello");
+console.log(typeof true); //
+console.log(typeof 123);
 
-// at first function call let input1 = 100 ; let input2 = 200
-// at second function call let input1 = 1 ; let input2 = 2
+function customTypeof(value) {
+  return "STRING";
+  return undefined;
+}
+console.log(customTypeof(1212));
+console.log(customTypeof(true));
 
-function calculateSum(input1, input2) {
-  console.log(` ${input1} + ${input2} = ${input1 + input2}`);
+function double(input) {
+  let output = input * 2;
+  return output;
+  console.log("do somehting"); // after reutrned once, noting works below it.
 }
 
-/* block scope  */
-/* calling / executing a function */
+let doubledvalue = double(1000);
+// let doubledvalue = 2000  above code is coverted like this
+console.log(doubledvalue);
 
-calculateSum(100, 200);
-calculateSum(1, 2);
-calculateSum(5, 10);
+console.log(double(5));
+console.log(double(100));
 
-console.log("hello", "world");
-
-
-
-
-function double(input){ // input here is called parameter
-    console.log(`2 * ${input} = ${2*input}`);
+function sum(input1, input2) {
+  return input1 + input2;
 }
 
-double(2) // 2 here is called an arguement
-double(10)
-double(100)
-double(200)
+console.log(double(25));
+console.log(sum(50, 100));
+console.log(sum(double(25), 100));
+console.log(sum(double(25), double(50)));
+console.log(sum(double(25), double(sum(25, 25))));
+
+
+
